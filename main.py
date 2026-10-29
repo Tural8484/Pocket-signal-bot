@@ -131,7 +131,7 @@ def main():
 
     print("Bot işləyir...")
    
-   keep_alive() 
+keep_alive()   
     app.run_polling()
 
 
