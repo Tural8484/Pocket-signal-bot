@@ -1,2 +1,2 @@
-pytelegrambotapi
+python-telegram-Bot
 requests
