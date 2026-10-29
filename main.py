@@ -128,10 +128,8 @@ def main():
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button_handler))
 
-    print("Bot işləyir...")
-   
-keep_alive()   
-    app.run_polling()
+    print("Bot işləyir...")   
+app.run_polling(   
 
 
 if __name__ == '__main__':
