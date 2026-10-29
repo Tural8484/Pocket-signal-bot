@@ -129,7 +129,7 @@ def main():
     app.add_handler(CallbackQueryHandler(button_handler))
 
     print("Bot işləyir...")   
-app.run_polling(   
+app.(run_polling() )   
 
 
 if __name__ == '__main__':
