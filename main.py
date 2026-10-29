@@ -19,7 +19,6 @@ def keep_alive():
 
 
 
-keep_alive()
 
 
 import logging
