@@ -81,7 +81,7 @@ async def siqnal_generatoru(context, chat_id):
             print(f"Xəta baş verdi: {e}")
 
 def main():
-    TOKEN = "9200059393:AAEQuv9e6qw89tAsOMZbDplWq7p2L5vYTaQ"
+    TOKEN = "9051775275:AAEjkfNA9eLusXXD5PAevewOPaG9LdU_Afc"
     
     application = ApplicationBuilder().token(TOKEN).build()
     
