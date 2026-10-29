@@ -1,3 +1,27 @@
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is running!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+    
+
+
+
+
+
+keep_alive()
+
+
 import logging
 import asyncio
 import random
@@ -106,7 +130,10 @@ def main():
     app.add_handler(CallbackQueryHandler(button_handler))
 
     print("Bot işləyir...")
+   
+   keep_alive() 
     app.run_polling()
+
 
 if __name__ == '__main__':
     main()
